@@ -12,5 +12,8 @@ txtfind: txtfind.o
 
 txtfind.o: txtfind.c 
 	gcc $(W) -c txtfind.c
+	
+.PHONY:all clean
+
 clean:
 	rm *.o txtfind isort
