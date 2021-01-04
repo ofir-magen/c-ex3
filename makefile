@@ -1,13 +1,13 @@
 W = -g -Wall
-all:txtfind.o isort.o txtfind isort
+all: txtfind isort
 
-isort: isort.o isort.c
+isort: isort.o 
 	gcc $(W) isort.o -o isort
 
 isort.o: isort.c
 	gcc $(W) -c isort.c
 	
-txtfind: txtfind.o txtfind.c
+txtfind: txtfind.o
 	gcc $(W) txtfind.o -o txtfind
 
 txtfind.o: txtfind.c 
